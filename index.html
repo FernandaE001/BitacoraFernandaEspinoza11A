@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Fernanda Espinoza</title>
+    <link rel="icon" type="image/png" href="Recursos/img/Logo.png">
+    <style>
+        html,body{
+            height: 100%;
+            margin: 0;
+            font-family: arial,sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        header{
+            padding: 20px;
+            background-color: #0a192f;
+            color: white;
+        }
+        h1 {
+        font-size: 2.5rem;
+        text-shadow: 0 0 7px #00d4ff, 0 0 15px #00d4ff, 0 0 30px #00d4ff;
+        }
+        main{
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .semana {
+        background-color: #ffffff; /* Fondo blanco para la tarjeta */
+        border-radius: 12px;       /* Bordes redondeados elegantes */
+        padding: 20px;             /* Espacio interno */
+        margin: 20px 0;            /* Espacio entre tarjetas */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        border-left: 6px solid #00d4ff; /* Una línea lateral del color de tu neón */
+        text-align: left;          /* Alinea el texto a la izquierda para mejor lectura */
+        transition: transform 0.2s; /* Pequeña animación al tocar la tarjeta */
+        }
+
+        .semana:hover {
+        transform: translateY(-5px); /* La tarjeta sube un poco al pasar el mouse */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* La sombra se intensifica */
+        }
+
+        .semana h4 {
+        margin-top: 0;
+        color: #0a192f;            /* Color oscuro para el título de la semana */
+        }
+
+        .semanaa {
+        background-color: #ffffff; 
+        border-radius: 12px;      
+        padding: 20px;             
+        margin: 20px 0;            
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        border-left: 6px solid #00d4ff; 
+        text-align: left;          
+        transition: transform 0.2s; 
+        }
+
+        .semanaa:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .semanaa h4 {
+        margin-top: 0;
+        color: #0a192f;            
+        }   
+        .semanaaa {
+        background-color: #ffffff; 
+        border-radius: 12px;      
+        padding: 20px;             
+        margin: 20px 0;            
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        border-left: 6px solid #00d4ff; 
+        text-align: left;          
+        transition: transform 0.2s; 
+        }
+
+        .semanaaa:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .semanaaa h4 {
+        margin-top: 0;
+        color: #0a192f;            
+        } 
+        .visor-pdf {
+        width: 100%;       /* Ocupa todo el ancho de la tarjeta */
+        height: 400px;     /* Altura suficiente para leer cómodamente */
+        border-radius: 8px;/* Bordes redondeados para que combine */
+        border: 1px solid #ddd;
+        margin-top: 15px;  /* Separa el PDF del texto superior */
+        }  
+
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 1px solid slategray;
+            background-color: rgb(187, 227, 251);
+        }
+        footer img {
+            transition: transform 0.3s ease; /* Suaviza el movimiento */
+        }
+
+        footer img:hover {
+            transform: scale(1.1); /* Crece un 10% */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bitácora Segunda y Tercera Unidad</h1>
+    </header>
+    <main>
+        <h3>Contenido de la página web</h3>
+        <div class="semana">
+        <h4>Semana 1: Introducción a Arduino</h4>
+        <p>En esta semana aprendemos lo esencial sobre Arduino, la plataforma de hardware libre que permite crear microordenadores personalizados para cualquier proyecto creativo.</p>
+        <embed src="Recursos/pdfs/mi archivo.pdf" type="application/pdf" class="visor-pdf">
+        </div>
+        <div class="semanaa">
+        <h4>Semana 2: Primer circuito</h4>
+        <p>En esta semana se aprendieron las habilidades básicas para hacer una led funcionar con el uso de Arduino y componentes de electrónica.</p>
+        <div class="contenedor-multimedia">
+        <video controls>
+            <source src="Recursos/Grabación 2026-04-30 084200.mp4" type="video/mp4">
+        </video>
+        </div>
+        <div class="semanaaa">
+        <h4>Semana 3: Configuración del Entorno</h4>
+        <p>En esta semana instalamos Visual Studio Code y aprendimos la estructura básica de una página web (HTML, Head, Body).</p>
+        </div>
+    </main>
+    <footer>
+        <span>@Maf0206</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" alt="" height="75" width="300">
+    </footer>
+</body>
+</html>
